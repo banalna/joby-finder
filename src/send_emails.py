@@ -12,7 +12,10 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'scraping_service.settings'
 
 django.setup()
 from scraping.models import Vacancy, Error, Url, ProgrammingLanguage, City
-from scraping_service.settings import EMAIL_HOST_USER
+from scraping_service.settings import (
+    EMAIL_HOST_USER,
+    EMAIL_HOST, EMAIL_HOST_PASSWORD
+)
 
 ADIMN_USER = EMAIL_HOST_USER
 

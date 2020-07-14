@@ -162,8 +162,8 @@ def hh(url, city=None, programming_language=None):
 
 
 if __name__ == '__main__':
-    url = 'https://djinni.co/jobs/?primary_keyword=C%2B%2B&location=%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0&title_only=True'
-    jobs, errors = djinni(url)
+    url = 'https://www.work.ua/ru/jobs-kyiv-python/'
+    jobs, errors = work(url, 'Киев', 'Python')
 
     h = codecs.open('work.json', 'w', 'utf-8')
     h.write(str(jobs))
